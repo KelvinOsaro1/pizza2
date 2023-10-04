@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Order Now</h1>
+            <link rel="stylesheet" href="Pizza.css">
+        </header>
+        <!--  Using the <nav> semantic element, create a navigation bar with links-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pizzamenu.html">Menu</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav><br><br><br>
+?<!-- To group element use the fieldset-->
+        <form action="#" method="post" class="order-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+    
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" ><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+    
+            </fieldset>
+            <fieldset>
+                <label for="pizza-size">Size:</label>
+                <select id="pizza-size" name="pizza-size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+    
+                <!-- placing your orders-->
+                <div><br></div>
+                <br>
+                    <label for="Canadian">Canadian</label>
+                    <input type="checkbox" id="Canadian" name="topping" value="Canadian"><br><br>
+                    
+                    <label for="GREEK">GREEK</label>
+                    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms"><br><br>
+                    
+
+                    <label for="American">American</label>
+                    <input type="checkbox" id="American" name="topping" value="American"><br><br>
+                    
+                    <label for="Mexican">Mexican</label>
+                    <input type="checkbox" id="Mexican" name="topping" value="Mexican"><br><br>
+                    
+                    <label for="Vegetarian">Vegetarian</label>
+                    <input type="checkbox" id="Vegetarian" name="topping" value="Vegetariaan"><br><br>
+
+                </div>
+
+            </fieldset>
+    
+            <fieldset>
+                <legend>Crust Type</legend>
+
+                <label for="thin-crust">Thin Crust</label>
+                <input type="radio" id="thin-crust" name="crust" value="thin-crust"><br><br>
+                
+                <label for="thin-crust">Thin Crust</label>
+                <input type="radio" id="thick-crust" name="crust" value="thick-crust"><br><br>
+                
+    
+            </fieldset>
+    
+            <fieldset>
+                <legend>Delivery Options</legend>
+
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="delivery" value="delivery"><br><br>
+                
+                <label for="pickup">Pickup</label>
+                <input type="radio" id="pickup" name="delivery" value="pickup"><br><br>
+                
+    
+            </fieldset>
+    
+            <fieldset>
+                <legend>Additional Comments</legend>
+    
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special instructions..."></textarea>
+    
+            </fieldset>
+    
+            <div class="form-actions">
+                <input type="submit" value="Place Order"><br><br>
+            <input type="reset" value="Clear Order">
+        </div>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Efosa's Pizza.</p>
+    </footer>
+
+    </body>
+</html>
